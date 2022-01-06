@@ -4,7 +4,19 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public Vector3 open;
+    private bool isOpened;
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+    public void Open()
+    {
+        animator.SetBool("isOpened", isOpened);
+        isOpened = !isOpened;
+    }
+    /*public Vector3 open;
     public Vector3 close;
     private Vector3 objectRotation;
     private float rotationSpeed = 3f;
@@ -36,4 +48,5 @@ public class Door : MonoBehaviour
         }
         
     }
+    */
 }

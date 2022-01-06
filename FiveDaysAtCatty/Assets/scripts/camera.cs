@@ -19,4 +19,9 @@ public class camera : MonoBehaviour
             if (touch.phase == TouchPhase.Moved) transform.Rotate(0f, touch.deltaPosition.x, 0f);
         }
     }
+
+    public void killSofa()
+    {
+
+    }
 }

@@ -9,6 +9,6 @@ public class DoorBtn : Button
     {
         OnMouseDown();
         Invoke("OnMouseUp", .1f);
-        door.Effect();
+        door.Open();
     }
 }
