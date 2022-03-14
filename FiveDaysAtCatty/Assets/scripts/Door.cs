@@ -13,8 +13,9 @@ public class Door : MonoBehaviour
     }
     public void Open()
     {
-        animator.SetBool("isOpened", isOpened);
         isOpened = !isOpened;
+        animator.SetBool("isOpened", isOpened);
+        
     }
     /*public Vector3 open;
     public Vector3 close;

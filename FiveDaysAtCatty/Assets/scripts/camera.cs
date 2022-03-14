@@ -20,8 +20,5 @@ public class camera : MonoBehaviour
         }
     }
 
-    public void killSofa()
-    {
-
-    }
+    
 }
